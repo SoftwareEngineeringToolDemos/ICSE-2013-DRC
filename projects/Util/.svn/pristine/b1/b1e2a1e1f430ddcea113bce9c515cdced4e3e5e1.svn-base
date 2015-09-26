@@ -1,0 +1,26 @@
+package config;
+
+/**
+ * 
+ * @author HUNG
+ *
+ */
+public class WebPatternsConfig {
+	
+	/*
+	 * Default files and folders
+	 */	
+	public static String astDotFile		= "ast.dot";
+	public static String astPdfFile		= "ast.pdf";
+	public static String astBatFile		= "ast.bat";
+	
+	public static String groumDotFile	= "groum.dot";
+	public static String groumPdfFile	= "groum.pdf";
+	public static String groumBatFile	= "groum.bat";
+		
+	/*
+	 * Groum parameters
+	 */
+	public static boolean ANONYMIZE_VARIABLE_NAMES = true;
+	
+}

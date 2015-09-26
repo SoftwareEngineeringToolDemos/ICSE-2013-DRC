@@ -1,5 +1,4 @@
 # ICSE-2013-DRC
-Repository containing the resources for the Dangling Reference Checker (DRC) tool
 
 This repository contains information related to the tool _Dangling Reference Checker_ (DRC) presented at the International Conference on Software Engineering, 2013. The tool was originally presented in [this paper](http://dl.acm.org/citation.cfm?id=2486989).
 
@@ -12,4 +11,4 @@ In this repository for DRC, you will find:
 * :white_check_mark: [The original source code for the tool](SomeExecutableInTheRepo) (available)
 * :white_check_mark: [A slightly modified version of the source code](AnotherExecutableInTheRepo) [Jayant Dhawan](https://github.com/jayantdhawan) got working (available)
 
-This repository was constructed by [Jayant Dhawan](https://github.com/jayantdhawan) under the supervision of [Emerson Murphy-Hill](https://github.com/CaptainEmerson). Thanks to Hung Hung Viet Nguyen (primary author of the tool) for his help in resolving tool dependencies.
+This repository was constructed by [Jayant Dhawan](https://github.com/jayantdhawan) under the supervision of [Emerson Murphy-Hill](https://github.com/CaptainEmerson). Thanks to Hung Hung Viet Nguyen (one of the authors of the tool) for his help in resolving tool dependencies.
