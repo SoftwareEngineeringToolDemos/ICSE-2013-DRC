@@ -8,7 +8,8 @@ This repository _is not_ the original repository for this tool. Here are some li
 * [A video of the tool](https://www.youtube.com/watch?v=y_AKZYhLlU4)
 
 In this repository for DRC, you will find:
-* :white_check_mark: The original source code for the tool (Commit 2cbd46ed1b9a50eeb517126ba034d78ee885f63b)
+* :white_check_mark: The plugin archives needed to install the DRC plugin for your Eclipse installation
+* :white_check_mark: The original source code (plugin project) for the tool (Commit 2cbd46ed1b9a50eeb517126ba034d78ee885f63b)
 * :white_check_mark: A slightly modified version of the source code, [Jayant Dhawan](https://github.com/jayantdhawan) got working
 
 This repository was constructed by [Jayant Dhawan](https://github.com/jayantdhawan) under the supervision of [Emerson Murphy-Hill](https://github.com/CaptainEmerson). Thanks to Hung Hung Viet Nguyen (one of the authors of the tool) for his help in resolving tool dependencies.
@@ -17,16 +18,18 @@ This repository was constructed by [Jayant Dhawan](https://github.com/jayantdhaw
 
 ## Instructions
 
-This tool has been distributed as a collection of Eclipse plugin projects, that can be imported into Eclipse and built. The repository's root contains the following folders:
-- __projects__: Four Eclipse projects for this tool.
-- __dependencies__: A collection of JAR files - external Eclipse plugins that the above projects depend upon.
+If you simply want to install the DRC plugin for your Eclipse software, you only need to look in the __/plugins__ directory described below. However, if you'd like to view the source code behind the plugin, then you need to know that the source code of this tool is composed of five Eclipse plugin projects, that can be imported into Eclipse and built. The directories of interest for this purpose are __/projects__ and __/dependencies__.
+
+### Description of /plugins
+If you want to get the DRC tool up and running in your Eclipse software, just copy the five .jar files in this directory to the _dropins_ folder of your Eclipse installation. Usually, this folder is located at `/usr/share/eclipse/dropins/`. Then run Eclipse from a shell by giving `eclipse -clean`. This will force Eclipse to clean its caches before starting.
 
 ### Description of /projects
-Contains the following Eclipse projects:
+Contains the following Eclipse projects that compose the source code for the DRC plugin:
 - __Data Model__: Symbolic executor for PHP
 - __Html Partial Parser__: Parser for the output of symbolic execution
 - __Web Entities__: Detection of embedded entities and dangling references
 - __edu.iastate.hungnv.babelref__: Eclipse plugin for showing embedded entities and dangling references (provided by edu.iastate.hungnv.babelref.ui.views.ERefEntityView)
+- __Util__: Utilities project
 
 ### Description of /dependencies
 Apart from being inter-dependent, the projects also have dependencies on external Eclipse plugins. These plugins that the projects in this repository depend on are provided in the _dependencies_ folder. The recommended way of using the dependencies is copying all files included in the _dependencies_ folder to the plugin folder of your Eclipse install directory. On Linux-based systems, generally, this directory is located at `/usr/share/eclipse/plugins`, but it may differ based on your Eclipse installation.
