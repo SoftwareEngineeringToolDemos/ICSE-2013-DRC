@@ -21,7 +21,7 @@ This repository was constructed by [Jayant Dhawan](https://github.com/jayantdhaw
 If you simply want to install the DRC plugin for your Eclipse software, you only need to look in the __/plugins__ directory described below. However, if you'd like to view the source code behind the plugin, then you need to know that the source code of this tool is composed of five Eclipse plugin projects, that can be imported into Eclipse and built. The directories of interest for this purpose are __/projects__ and __/dependencies__.
 
 ### Description of /plugins
-If you want to get the DRC tool up and running in your Eclipse software, just copy the five .jar files in this directory to the _dropins_ folder of your Eclipse installation. Usually, this folder is located at `/usr/share/eclipse/dropins/`. Then run Eclipse from a shell by giving `eclipse -clean`. This will force Eclipse to clean its caches before starting.
+If you want to get the DRC tool up and running in your Eclipse software, just copy the five .jar files in this directory to the _dropins_ folder of your Eclipse installation. Usually, this folder is located at `/usr/share/eclipse/dropins/`. Then run Eclipse from a shell by executing `eclipse -clean` in the terminal. This will force Eclipse to clean its caches before starting.
 
 ### Description of /projects
 Contains the following Eclipse projects that compose the source code for the DRC plugin:
@@ -32,9 +32,9 @@ Contains the following Eclipse projects that compose the source code for the DRC
 - __Util__: Utilities project
 
 ### Description of /dependencies
-Apart from being inter-dependent, the projects also have dependencies on external Eclipse plugins. These plugins that the projects in this repository depend on are provided in the _dependencies_ folder. The recommended way of using the dependencies is copying all files included in the _dependencies_ folder to the plugin folder of your Eclipse install directory. On Linux-based systems, generally, this directory is located at `/usr/share/eclipse/plugins`, but it may differ based on your Eclipse installation.
+Apart from being interdependent, the projects also have dependencies on external Eclipse plugins. These plugins that the projects in this repository depend on are provided in the _dependencies_ folder. The recommended way of using the dependencies is copying all files included in the _dependencies_ folder to the plugin folder of your Eclipse install directory. On Linux-based systems, generally, this directory is located at `/usr/share/eclipse/plugins`, but it may differ based on your Eclipse installation.
 
-It is important to note here that the dependencies are already listed in the _.classpath_ file in each of the projects. Depending on where you keep the plugins provided in the _dependencies_ folder, changes may be required to the _path_ attributes for the _classpathentry_ in the _.classpath_ files for the projects. This may be done by manually editing the _.classpath_ files, or by using the _Build Path -> Configure Build Path_ options for the Eclipse projects.
+It is important to note here that the dependencies are already listed in the _.classpath_ file in each of the projects. Depending on the location of these plugins under the Eclipse directory, changes may be required to the _path_ attributes for the _classpathentry_ in the _.classpath_ files for the projects. This may be done manually by editing the _.classpath_ files, or by using the _Build Path -> Configure Build Path_ option for the Eclipse projects.
 
 
 ## Attribution
