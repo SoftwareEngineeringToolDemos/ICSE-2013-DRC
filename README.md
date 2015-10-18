@@ -9,7 +9,7 @@ This repository _is not_ the original repository for this tool. Here are some li
 
 In this repository for DRC, you will find:
 * :white_check_mark: The plugin archives needed to install the DRC plugin for your Eclipse installation
-* :white_check_mark: The original source code (plugin project) for the tool (Commit 2cbd46ed1b9a50eeb517126ba034d78ee885f63b)
+* :white_check_mark: The original [source](https://github.com/SoftwareEngineeringToolDemos/ICSE-2013-DRC/tree/master/projects) code (plugin project) for the tool (Commit 2cbd46ed1b9a50eeb517126ba034d78ee885f63b)
 * :white_check_mark: A slightly modified version of the source code, [Jayant Dhawan](https://github.com/jayantdhawan) got working
 
 This repository was constructed by [Jayant Dhawan](https://github.com/jayantdhawan) under the supervision of [Emerson Murphy-Hill](https://github.com/CaptainEmerson). Thanks to Hung Hung Viet Nguyen (one of the authors of the tool) for his help in resolving tool dependencies.
