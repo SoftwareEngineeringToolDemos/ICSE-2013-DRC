@@ -32,7 +32,7 @@ Contains the following Eclipse projects that compose the source code for the DRC
 - __Util__: Utilities project
 
 ### Description of /dependencies
-Apart from being inter-dependent, the projects also have dependencies on external Eclipse plugins. These plugins that the projects in this repository depend on are provided in the _dependencies_ folder. The recommended way of using the dependencies is copying all files included in the _dependencies_ folder to the plugin folder of your Eclipse install directory. On Linux-based systems, generally, this directory is located at `/usr/share/eclipse/plugins`, but it may differ based on your Eclipse installation.
+Apart from being interdependent, the projects also have dependencies on external Eclipse plugins. These plugins that the projects in this repository depend on are provided in the _dependencies_ folder. The recommended way of using the dependencies is copying all files included in the _dependencies_ folder to the plugin folder of your Eclipse install directory. On Linux-based systems, generally, this directory is located at `/usr/share/eclipse/plugins`, but it may differ based on your Eclipse installation.
 
 It is important to note here that the dependencies are already listed in the _.classpath_ file in each of the projects. Depending on the location of these plugins under the Eclipse directory, changes may be required to the _path_ attributes for the _classpathentry_ in the _.classpath_ files for the projects. This may be done manually by editing the _.classpath_ files, or by using the _Build Path -> Configure Build Path_ option for the Eclipse projects.
 
