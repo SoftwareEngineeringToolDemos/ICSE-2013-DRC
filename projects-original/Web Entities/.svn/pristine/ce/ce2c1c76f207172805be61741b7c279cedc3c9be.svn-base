@@ -1,0 +1,33 @@
+package references;
+
+import sourcetracing.Location;
+
+/**
+ * 
+ * @author HUNG
+ *
+ */
+public class PhpVariableRef extends RegularReference {
+
+	/**
+	 * Constructor
+	 */
+	public PhpVariableRef(String name, Location location) {
+		super(name, location);
+	}
+	
+	/*
+	 * (non-Javadoc)
+	 * @see references.RegularReference#refersTo(references.DeclaringReference)
+	 */
+	@Override
+	public boolean refersTo(DeclaringReference declaringReference) {
+		if (declaringReference instanceof PhpVariableDecl) {
+			PhpVariableDecl variableDecl = (PhpVariableDecl) declaringReference;
+			return getName().equals(variableDecl.getName());
+		}
+		else
+			return false;
+	}
+
+}

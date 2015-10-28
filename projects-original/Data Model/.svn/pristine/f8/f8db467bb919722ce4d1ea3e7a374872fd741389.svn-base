@@ -1,0 +1,109 @@
+package php.nodes;
+
+import java.util.ArrayList;
+
+import org.eclipse.php.internal.core.ast.nodes.Variable;
+
+import php.Constraint;
+import php.ElementManager;
+import php.elements.PhpVariable;
+import datamodel.nodes.DataNode;
+import datamodel.nodes.SymbolicNode;
+
+/**
+ * 
+ * @author HUNG
+ *
+ */
+public class VariableNode extends VariableBaseNode {
+	
+	private ExpressionNode variableNameExpressionNode;	// The name of the variable
+	private String variableName = null;
+	
+	/*
+	Holds a variable. note that the variable name can be expression, 
+	
+	e.g. $a
+	*/
+	public VariableNode(Variable variable) {
+		super(variable);
+		variableNameExpressionNode = ExpressionNode.createInstance(variable.getName());
+	}
+	
+	/**
+	 * Resolves the name of the variable.
+	 */
+	public String resolveVariableName(ElementManager elementManager) {
+		if (variableName == null)
+			variableName = variableNameExpressionNode.resolveName(elementManager);
+		return variableName;
+	}
+	
+	/*
+	 * The following code is used from BabelRef to identify PHP variable entities.
+	 */
+	// BEGIN OF BABELREF CODE
+	public interface IVariableDeclListener {
+		public void variableDeclFound(IdentifierNode variableName, ArrayList<Constraint> constraints);
+	}
+	
+	public interface IVariableRefListener {
+		public void variableRefFound(IdentifierNode variableName, ArrayList<Constraint> constraints);
+	}
+	
+	public static IVariableDeclListener variableDeclListener = null;
+	
+	public static IVariableRefListener variableRefListener = null;
+	// END OF BABELREF CODE
+
+	/*
+	 * (non-Javadoc)
+	 * @see servergraph.nodes.PhpNode#execute(servergraph.ElementManager)
+	 */
+	@Override
+	public DataNode execute(ElementManager elementManager) {
+		/*
+		 * The following code is used from BabelRef to identify PHP variable entities.
+		 */
+		// BEGIN OF BABELREF CODE
+		if (variableRefListener != null) {
+			if (variableNameExpressionNode instanceof IdentifierNode)
+				variableRefListener.variableRefFound((IdentifierNode) variableNameExpressionNode, elementManager.getConstraints());
+		}
+		// END OF BABELREF CODE
+		
+		String variableName = resolveVariableName(elementManager);
+		PhpVariable phpVariable = elementManager.getVariableFromFunctionScope(variableName);
+		if (phpVariable == null)
+			return new SymbolicNode(this);
+		else if (phpVariable.getDataNode() instanceof SymbolicNode) {
+			SymbolicNode symbolicNode = new SymbolicNode(this);
+			symbolicNode.setParentNode((SymbolicNode) phpVariable.getDataNode());
+			return symbolicNode;
+		}
+		else
+			return phpVariable.getDataNode();
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * @see servergraph.nodes.VariableBaseNode#createVariablePossiblyWithNull(servergraph.ElementManager)
+	 */
+	@Override
+	public PhpVariable createVariablePossiblyWithNull(ElementManager elementManager) {
+		/*
+		 * The following code is used from BabelRef to identify PHP variable entities.
+		 */
+		// BEGIN OF BABELREF CODE
+		if (variableDeclListener != null) {
+			if (variableNameExpressionNode instanceof IdentifierNode)
+				variableDeclListener.variableDeclFound((IdentifierNode) variableNameExpressionNode, elementManager.getConstraints());
+		}
+		// END OF BABELREF CODE
+		
+		String variableName = resolveVariableName(elementManager);
+		PhpVariable phpVariable = new PhpVariable(variableName);
+		return phpVariable;
+	}
+	
+}

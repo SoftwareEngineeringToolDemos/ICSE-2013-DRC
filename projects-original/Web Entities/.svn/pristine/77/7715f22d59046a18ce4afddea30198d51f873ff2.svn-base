@@ -1,0 +1,16 @@
+package references;
+
+import sourcetracing.Location;
+
+/**
+ * 
+ * @author HUNG
+ *
+ */
+public class PhpVariableDecl extends DeclaringReference {
+
+	public PhpVariableDecl(String name, Location location) {
+		super(name, location);
+	}
+	
+}

@@ -1,0 +1,21 @@
+package babelref;
+
+public class EvalResults {
+	
+	public static int maxDmodelNodes = 0;
+	
+	public static int maxSelectNodes = 0;
+	
+	public static int stateAfterSelectEquals = 0;
+	
+	public static int stateAfterSelectDifferent = 0;
+	
+	public static int numTags = 0;
+	public static int maxNumTags = 0;
+	
+	public static int numOfReferences = 0;
+	
+	public static int numOfReferencesWithLessThan2Length = 0;
+	public static int pathConstraintLength = 0;
+
+}

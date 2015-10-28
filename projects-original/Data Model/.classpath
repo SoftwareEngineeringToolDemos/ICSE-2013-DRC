@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="/Work/Eclipse/eclipse/plugins/org.eclipse.dltk.core_5.0.0.201306060709.jar"/>
+	<classpathentry kind="lib" path="/Work/Eclipse/eclipse/plugins/org.eclipse.equinox.common_3.6.200.v20130402-1505.jar"/>
+	<classpathentry kind="lib" path="/Work/Eclipse/jars/JavaCup/java-cup-11a-runtime.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

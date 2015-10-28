@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+encoding//src/datamodel/DataModel.java=UTF-8
+encoding//src/datamodel/nodes/LiteralNode.java=UTF-8
+encoding//src/php/ElementManager.java=UTF-8
+encoding//src/php/elements/PhpFunction.java=UTF-8
+encoding//src/php/nodes/IncludeNode.java=UTF-8
