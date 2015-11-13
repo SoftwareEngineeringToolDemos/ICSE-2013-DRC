@@ -38,6 +38,8 @@ Apart from being interdependent, the projects also have dependencies on external
 
 It is important to note here that the dependencies are already listed in the _.classpath_ file in each of the projects. Depending on the location of these plugins under the Eclipse directory, changes may be required to the _path_ attributes for the _classpathentry_ in the _.classpath_ files for the projects. This may be done by manually editing the _.classpath_ files, or by using the _Build Path -> Configure Build Path_ options for the Eclipse projects.
 
+### Description of /build-vm
+Build a virtual machine containing the tool installed and running, automatically using Vagrant. See the [directory tree](https://github.com/SoftwareEngineeringToolDemos/ICSE-2013-DRC/tree/master/build-vm) for instructions about using it.
 
 ## Attribution
 

@@ -1,8 +1,11 @@
 #!/bin/sh
 
-#mkdir /home/vagrant/Desktop/test
-#chown vagrant:vagrant /home/vagrant/Desktop/test
+# Update the package lists
+apt-get -y update
 
-apt-get update
+# Install prerequisites, saying yes to all prompts
+# Eclipse (Java should be installed as a dependency)
 apt-get -y install eclipse-platform
 
+# Git
+apt-get -y install git
