@@ -1,0 +1,5 @@
+- The tool uses Eclipse platform, which is released under the Eclipse Public License (EPL), available at https://eclipse.org/org/documents/epl-v10.php
+- The operating system used for this virtual machine is Ubuntu 15.04. It uses several free software licenses (mainly GPL). Legal information about Ubuntu can be found here: http://www.ubuntu.com/legal
+- As for the plugin files that make the tool, no explicit license is needed to use them.
+
+
