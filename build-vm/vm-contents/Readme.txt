@@ -14,6 +14,10 @@ Note: You are logged in to this virtual machine as 'vagrant'. This user account 
 INSTRUCTIONS
 ============
 
+__Note:__ When Eclipse starts for the first time, the default screen is going to be the _Welcome_ screen. Click on the _Workbench_ icon to proceed.
+
+
+
 [Step 1 (optional)] Start Eclipse
 - Double click the Eclipse icon on the desktop OR
 - Navigate to /home/vagrant/work/eclipse/, and open the application 'eclipse' from there
