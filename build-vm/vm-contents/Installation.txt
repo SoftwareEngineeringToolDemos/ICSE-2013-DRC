@@ -9,9 +9,9 @@ INSTALLATION
 
 This file lists the steps to install the DRC plugin for your Eclipse software. It assumes that Eclipse is already installed on your system. The plugin has been succesfully tested with Eclipse version 3.8 (Indigo).
 
-The directory DRC-plugins, on the desktop, contains five .jar files. These files together compose the DRC plugin. To install the plugin, copy these five files to the dropins folder of your Eclipse installation. Usually, this folder is located at:
+The directory DRC-plugins, on the desktop, contains five .jar files. These files together compose the DRC plugin. To install the plugin, copy these five files to the dropins folder of your Eclipse installation. On this machine, this folder is located at:
 
-	/usr/share/eclipse/dropins/
+	/home/vagrant/work/eclipse/dropins/
 
 Then run Eclipse from a shell by giving the following command:
 

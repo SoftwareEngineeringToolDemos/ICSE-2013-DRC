@@ -6,17 +6,17 @@ Personal Website: http://home.engineering.iastate.edu/~hungnv/Personal/index.php
 
 ABOUT
 ============
-This file lists the steps to run the DRC tool (an Eclipse plugin) for detecting dangling references in a PHP file with embedded HTML and JavaScript. The VM has been configured such that Eclipse should start automatically when you log in to this machine as 'drcuser' user. The plugin and its dependencies are pre-installed in the Eclipse directories and ready to be used. A sample project, 'myPHPwebsite', having a single PHP file has been created to demostrate the tool's capabilities. The first three steps below are optional.
+This file lists the steps to run the DRC tool (an Eclipse plugin) for detecting dangling references in a PHP file with embedded HTML and JavaScript. The VM has been configured such that Eclipse should start automatically when you log in to this machine as 'vagrant' user. The plugin and its dependencies are pre-installed in the Eclipse directories and ready to be used. A sample project, 'myPHPwebsite', having a single PHP file, has been created to demostrate the tool's capabilities. The first three steps below are optional.
 
-Note: You are logged in to this virtual machine as 'drcuser'. This user account is already configured for password-less login and 'sudo' commands. But if you ever need a password, it is the same as the username - 'drcuser' (without the quotes).
+Note: You are logged in to this virtual machine as 'vagrant'. This user account is already configured for password-less login. But if you ever need a password, it is the same as the username - 'vagrant' (without the quotes).
 
 
 INSTRUCTIONS
 ============
 
 [Step 1 (optional)] Start Eclipse
-- Double click the Eclipse icon on the desktop, OR
-- Go to the Applications menu on the top-left, and start typing 'eclipse' in the search bar. Click on the the Eclipse icon when it appears.
+- Double click the Eclipse icon on the desktop OR
+- Navigate to /home/vagrant/work/eclipse/, and open the application 'eclipse' from there
 
 ---
 

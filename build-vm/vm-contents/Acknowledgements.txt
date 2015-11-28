@@ -1,0 +1,7 @@
+Acknowledgements
+----------------
+
+The bootstrap.sh bash script used to install the software and prepare the VM for usage makes use of code from the following project(s):
+
+Eclipse Import Projects Plug-in
+https://github.com/seeq12/eclipse-import-projects-plugin

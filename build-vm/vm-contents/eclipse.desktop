@@ -2,6 +2,6 @@
 Type=Application
 Terminal=false
 Name=Eclipse
-Icon=/usr/share/icons/hicolor/48x48/apps/eclipse.png
-Exec=eclipse
+Icon=eclipse
+Exec=eclipse -data /home/vagrant/workspace -import /home/vagrant/workspace/myPHPwebsite
 Categories=Application;
