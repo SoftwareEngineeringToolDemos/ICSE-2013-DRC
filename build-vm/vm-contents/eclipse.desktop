@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Terminal=false
+Name=Eclipse
+Icon=/usr/share/icons/hicolor/48x48/apps/eclipse.png
+Exec=eclipse
+Categories=Application;
