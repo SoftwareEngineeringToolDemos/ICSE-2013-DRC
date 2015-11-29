@@ -21,6 +21,10 @@ This directory contains the Vagrant scripts necessary for creating and spinning-
 `vagrant up`
 Vagrant will now download the base virtual machine image (called a _box_), create a virtual machine using this image, and use the `bootstrap.sh` script present in this directory to install the tools, including all of its prerequisites, inside the virtual machine.
 
+## Acknowledgement
+A part of bootstrap.sh script utilizes the [Eclipse Import Projects Plug-in](https://github.com/seeq12/eclipse-import-projects-plugin) to import Eclipse projects via command line.
+
+
 ## Notes
 - The Ubuntu VM has the default username/password of `vagrant`/`vagrant`
 - More information can be found on the files located on the desktop

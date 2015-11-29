@@ -14,7 +14,7 @@ Note: You are logged in to this virtual machine as 'vagrant'. This user account 
 INSTRUCTIONS
 ============
 
-__Note:__ When Eclipse starts for the first time, the default screen is going to be the _Welcome_ screen. Click on the _Workbench_ icon to proceed.
+Note: When Eclipse starts for the first time, the default screen is going to be the Welcome screen. Click on the Workbench icon to proceed.
 
 
 
