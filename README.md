@@ -8,9 +8,10 @@ This repository _is not_ the original repository for this tool. Here are some li
 * [A video of the tool](https://www.youtube.com/watch?v=y_AKZYhLlU4)
 
 In this repository for DRC, you will find:
-* :white_check_mark: The plugin archives needed to install the DRC plugin for your Eclipse installation
+* :white_check_mark: [The plugin archives](https://github.com/SoftwareEngineeringToolDemos/ICSE-2013-DRC/tree/master/plugins) needed to install the DRC plugin for your Eclipse installation
 * :white_check_mark: [The original source code (plugin project) for the tool](https://github.com/SoftwareEngineeringToolDemos/ICSE-2013-DRC/tree/master/projects-original)
 * :white_check_mark: [A slightly modified version of the source code](https://github.com/SoftwareEngineeringToolDemos/ICSE-2013-DRC/tree/master/projects), [Jayant Dhawan](https://github.com/jayantdhawan) got working
+* :white_check_mark: [Virtual machine containing tool](https://drive.google.com/a/ncsu.edu/file/d/0B_4C_DtkGMNCZEJjTlgzaFdWMkE/view?usp=sharing)
 
 This repository was constructed by [Jayant Dhawan](https://github.com/jayantdhawan) under the supervision of [Emerson Murphy-Hill](https://github.com/CaptainEmerson). Thanks to Hung Hung Viet Nguyen (one of the authors of the tool) for his help in resolving tool dependencies.
 
@@ -40,9 +41,3 @@ It is important to note here that the dependencies are already listed in the _.c
 
 ### Description of /build-vm
 Build a virtual machine containing the tool installed and running, automatically using Vagrant. See the [directory tree](https://github.com/SoftwareEngineeringToolDemos/ICSE-2013-DRC/tree/master/build-vm) for instructions about using it.
-
-## Attribution
-
-Author of tool: Hung Viet Nguyen
- 
-Personal website: http://home.engineering.iastate.edu/~hungnv/Personal/index.php
