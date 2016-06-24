@@ -11,7 +11,7 @@ In this repository for DRC, you will find:
 * :white_check_mark: [The plugin archives](https://github.com/SoftwareEngineeringToolDemos/ICSE-2013-DRC/tree/master/plugins) needed to install the DRC plugin for your Eclipse installation
 * :white_check_mark: [The original source code (plugin project) for the tool](https://github.com/SoftwareEngineeringToolDemos/ICSE-2013-DRC/tree/master/projects-original)
 * :white_check_mark: [A slightly modified version of the source code](https://github.com/SoftwareEngineeringToolDemos/ICSE-2013-DRC/tree/master/projects), [Jayant Dhawan](https://github.com/jayantdhawan) got working
-* :white_check_mark: [Virtual machine containing tool](https://drive.google.com/a/ncsu.edu/file/d/0B_4C_DtkGMNCZEJjTlgzaFdWMkE/view?usp=sharing)
+* :white_check_mark: [Virtual machine containing tool](http://go.ncsu.edu/SE-tool-VMs)
 
 This repository was constructed by [Jayant Dhawan](https://github.com/jayantdhawan) under the supervision of [Emerson Murphy-Hill](https://github.com/CaptainEmerson). Thanks to Hung Viet Nguyen (one of the authors of the tool) for his help in resolving tool dependencies.
 
